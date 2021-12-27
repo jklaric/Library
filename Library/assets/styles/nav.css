@@ -1,0 +1,42 @@
+nav {
+  width: 100vw;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: gainsboro;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 50px;
+  padding-bottom: 25px;
+}
+
+.nav__logo--icon {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.nav__logo--name {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.nav__links {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.nav__session {
+  margin-right: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}

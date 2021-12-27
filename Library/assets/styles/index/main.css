@@ -1,0 +1,38 @@
+.header__entries {
+  display: flex;
+  margin-left: 200px;
+  font-size: 40px;
+}
+
+.header__card {
+  margin-left: 200px;
+  margin-top: 30px;
+  background-color: gainsboro;
+  width: max-content;
+  padding: 15px;
+  border-radius: 25px;
+  border: solid black 1px;
+}
+
+.header__card--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__card--cover {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.header__card--by {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.header__card--title,
+.header__card--author {
+  font-size: 30px;
+  margin-top: 10px;
+}

@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <link rel="stylesheet" href="./assets/styles/nav.css">
+    <link rel="stylesheet" href="./assets/styles/index/header.css">
+    <link rel="stylesheet" href="./assets/styles/index/main.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
 </head>
 <body>
     <nav>
@@ -27,20 +32,21 @@
     </nav>
 
     <header>
-        <section>
-            <h1>Library</h1>
-            <p>Official website of the local library!</p> 
+        <section class="header__intro">
+            <h1 class="header__intro--library">Library</h1>
+            <p class="header__intro--greetings">Welcome to the official website of the local library!</p> 
         </section>
     </header>
 
     <main>
-            <h1>New entries:</h1>
+            <h1 class="header__entries">New entries:</h1>
 
-            <section>
-                <a href="">
-                    <img src="" alt="">
-                    <p>Book name</p>
-                    <p>Author name</p>
+            <section class="header__card">
+                <a class="header__card--link" href="">
+                    <p class="header__card--title">Book title</p>
+                    <p class="header__card--by">by:</p>
+                    <p class="header__card--author">Author name</p>
+                    <img class="header__card--cover" src="./assets/images/LibraryIcon.png" alt="">
                 </a>
             </section>
     </main>
@@ -48,7 +54,7 @@
     <footer>
         <section>
             <p>Contact info & social media:</p>
-            <p>Customer support: +385 99 123 4567</p>
+            <p>Customer support: +385 99 123 45678</p>
             <a href="">Facebook</a>
             <a href="">Instagram</a>
         </section>
