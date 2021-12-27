@@ -20,4 +20,6 @@ header {
 
 .header__intro--greetings {
   font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: gainsboro;
 }

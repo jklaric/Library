@@ -3,6 +3,8 @@
   margin-left: 200px;
   margin-top: 70px;
   font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: gainsboro;
 }
 
 .header__card {
@@ -39,4 +41,9 @@
   height: 5px;
   font-size: 30px;
   margin-top: 10px;
+}
+
+.header__card:hover {
+  transform: scale(1.1);
+  transition: 300ms;
 }

@@ -2,7 +2,6 @@ nav {
   max-width: 100%;
   height: 100px;
   width: 100vw;
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +18,7 @@ nav {
 }
 
 .nav__logo--icon {
+  display: inline-block;
   max-width: 70px;
   max-height: 70px;
 }
@@ -28,6 +28,8 @@ nav {
   font-weight: bolder;
   margin-top: 50px;
   margin-left: 20px;
+  text-decoration: underline;
+  text-decoration-color: #a6c5b6;
 }
 
 .nav__links {
@@ -37,8 +39,27 @@ nav {
   font-size: 20px;
 }
 
+.nav__links--frontpage,
+.nav__links--books,
+.nav__links--branches {
+  padding: 7px;
+}
+
 .nav__session {
   margin-right: 50px;
   margin-bottom: 30px;
   font-size: 20px;
+}
+
+.nav__logo--icon:hover {
+  transform: rotate(360deg);
+  transition: 3s;
+}
+
+.nav__links--frontpage:hover,
+.nav__links--books:hover,
+.nav__links--branches:hover {
+  background-color: #a6c5b6;
+  border-radius: 8px;
+  transition: 1s;
 }
