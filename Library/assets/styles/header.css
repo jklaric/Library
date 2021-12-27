@@ -1,5 +1,12 @@
+header {
+  height: 300px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .header__intro {
-  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +14,7 @@
 }
 
 .header__intro--library {
-  display: block;
+  height: 20px;
   font-size: 60px;
 }
 
