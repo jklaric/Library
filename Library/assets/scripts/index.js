@@ -1,31 +1,42 @@
-const newTitle = {
-  title: "IIIIII",
-  author: "F. M. Dostojevski",
-  genre: "psychological novel",
-  length: 576,
-};
+let books = [];
 
-let titles = [];
+const bookCardElement = document.querySelector(".main__wrapper");
+bookCardElement.innerHTML = "";
 
-titleCardElement = document.querySelector(".main__card");
-titleCardElement.innerHTML = "";
+function addNewBook() {
+  const titleValue = document.querySelector(".main__add--title");
+  const authorValue = document.querySelector(".main__add--author");
+  const genreValue = document.querySelector(".main__add--genre");
+  const pageCountValue = document.querySelector(".main__add--pages");
 
-const titleElement =
-  '<a class="main__card--link" href="">' +
-  '<p class="main__card--title">' +
-  newTitle.title +
-  "</p>" +
-  '<p class="main__card--by">by:</p>' +
-  '<p class="main__card--author">' +
-  newTitle.author +
-  "</p>" +
-  '<p class="main__card--genre">' +
-  newTitle.genre +
-  "</p>" +
-  '<p class="main__card--length">' +
-  newTitle.length +
-  "</p>" +
-  '<img class="main__card--cover" src="./assets/images/LibraryIcon.png" alt="">' +
-  "</a>";
+  const newBook = {
+    title: titleValue.value,
+    author: authorValue.value,
+    genre: genreValue.value,
+    pagecount: pageCountValue.value,
+  };
 
-titleCardElement.innerHTML = titleCardElement.innerHTML + titleElement;
+  books.push(newBook);
+
+  const bookElement =
+    '<section class="main__card">' +
+    '<a class="main__card--link" href="">' +
+    '<p class="main__card--title">' +
+    newBook.title +
+    "</p>" +
+    '<p class="main__card--by">by:</p>' +
+    '<p class="main__card--author">' +
+    newBook.author +
+    "</p>" +
+    '<p class="main__card--genre">' +
+    newBook.genre +
+    "</p>" +
+    '<p class="main__card--length">' +
+    newBook.pagecount +
+    "</p>" +
+    '<img class="main__card--cover" src="./assets/images/LibraryIcon.png" alt="">' +
+    "</a>" +
+    "</section>";
+
+  bookCardElement.innerHTML = bookCardElement.innerHTML + bookElement;
+}
