@@ -1,49 +1,77 @@
-.header__entries {
+.main__edit {
+  justify-self: center;
+  width: 90%;
   display: flex;
-  margin-left: 200px;
-  margin-top: 70px;
+  justify-content: space-between;
+  margin-left: 70px;
+}
+
+.main__edit--entries {
+  display: flex;
   font-size: 40px;
   text-decoration: underline;
   text-decoration-color: gainsboro;
 }
 
-.header__card {
+.main__edit--new {
+  margin-top: 20px;
+  height: min-content;
+  width: fit-content;
+  font-size: 40px;
+  padding: 3px;
+}
+
+.main__card {
   margin-left: 200px;
   margin-top: 50px;
-  width: max-content;
-  height: max-content;
+  width: 200px;
+  height: fit-content;
   background-color: gainsboro;
   padding: 15px;
   border-radius: 25px;
   border: solid black 1px;
 }
 
-.header__card--link {
+.main__card--link {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.header__card--cover {
+.main__card--cover {
   max-width: 100px;
   max-height: 100px;
 }
 
-.header__card--by {
+.main__card--by {
   font-size: 20px;
-  margin-bottom: -1px;
-  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-top: 40px;
 }
 
-.header__card--title,
-.header__card--author {
+.main__card--title,
+.main__card--author {
   height: 5px;
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
-.header__card:hover {
+.main__card--genre,
+.main__card--length {
+  margin-left: 30px;
+  font-size: 20px;
+  max-height: 5px;
+  margin-top: 0px;
+}
+
+.main__card:hover {
   transform: scale(1.1);
   transition: 300ms;
+}
+
+.main__edit--new:hover {
+  background-color: #a6c5b6;
+  border-radius: 10px;
+  transition: 500ms;
 }
