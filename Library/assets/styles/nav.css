@@ -39,6 +39,11 @@ nav {
   font-size: 20px;
 }
 
+.nav__links--frontpage {
+  background-color: #a6c5b6;
+  border-radius: 8px;
+}
+
 .nav__links--frontpage,
 .nav__links--books,
 .nav__links--branches {
@@ -56,7 +61,6 @@ nav {
   transition: 3s;
 }
 
-.nav__links--frontpage:hover,
 .nav__links--books:hover,
 .nav__links--branches:hover {
   background-color: #a6c5b6;
